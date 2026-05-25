@@ -9,7 +9,8 @@ Despite the tremendous volume of data they are trained on, Large Language Models
 
 AttentionCD is a decoding strategy that masks task-specific attention heads to yield better contrastive signals to reduce factuality hallucinations in LLMs. Our approach shows competitive performance with the existing layer-based contrastive decoding strategies and offers an average performance improvement of over +20\% over greedy decoding across different tasks and models.
 
-We extend the code-base from the authors of PruneCD: https://github.com/hoeng4/PruneCD/tree/main.
+
+> We extend the code-base from the authors of PruneCD: https://github.com/hoeng4/PruneCD/tree/main. Thank you for your open-source contribution!
 
 
 ## 1. Task-specific Head Discovery

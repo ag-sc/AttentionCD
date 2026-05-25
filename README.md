@@ -1,7 +1,9 @@
 # AttentionCD: Reducing Factuality Hallucinations in Large Language Models using Task-specific Head-based Contrastive Decoding
 
 
-![example](figures/example_fig.png "AttentionCD")
+<div align="center">
+  <img src="figures/example_fig.png" alt="AttentionCD" width="350">
+</div>
 
 Despite the tremendous volume of data they are trained on, Large Language Models (LLMs) can generate plausibly sounding but non-factual responses. These factually hallucinated responses reduce users’ trust in such models and hinder their adoption in safety-critical applications. Among the many training-free hallucination mitigation strategies proposed, contrastive decoding strategies have received wide attention. Most of the work in this direction explores how contrasting probability distributions from different decoder layers can help in reducing factuality hallucinations. This work, in contrast, investigates whether masking of attention heads can provide reliable contrastive signals. 
 

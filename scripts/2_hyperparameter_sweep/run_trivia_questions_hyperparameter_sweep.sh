@@ -9,6 +9,7 @@ MODEL_PATHS=(
 
 ALPHA_LIST=(
     0.1
+    0.5
 )
 
 THRESHOLD_PERCENTILES=(

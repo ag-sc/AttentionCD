@@ -1,4 +1,6 @@
 #!/bin/bash
+# Note: Choose the best hyper-parameter and comment out rest of the values in the list.
+
 DATA_PATH="data/natural_questions"  
 
 MODEL_PATHS=(

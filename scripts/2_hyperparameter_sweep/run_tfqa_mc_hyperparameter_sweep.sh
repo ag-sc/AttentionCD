@@ -6,7 +6,7 @@ MODEL_PATHS=(
 )
 
 ALPHA_LIST=(
-    1.0
+    1.0  # uses entropy-guided dynamic CD temperature
 )
 
 THRESHOLD_PERCENTILES=(
@@ -66,6 +66,8 @@ for MODEL_PATH in "${MODEL_PATHS[@]}"; do
                 echo "Unknown MODE: $MODE"
                 exit 1
             fi
+
+            export ATT_CD_MODE="decore"
       
             for LAYERS_TO_ABLATE in "${LAYERS_TO_ABLATE_LIST[@]}"; do
                 for ALPHA in "${ALPHA_LIST[@]}"; do

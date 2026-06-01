@@ -1,6 +1,7 @@
 #!/bin/bash
-DATA_PATH="data/triviaqa"  
+# Note: Choose the best hyper-parameter and comment out rest of the values in the list.
 
+DATA_PATH="data/triviaqa"  
 MODEL_PATHS=(
     "meta-llama/Llama-3.2-1B-Instruct"
     "meta-llama/Llama-3.2-3B-Instruct"
@@ -9,6 +10,7 @@ MODEL_PATHS=(
 
 ALPHA_LIST=(
     0.1
+    0.5
 )
 
 THRESHOLD_PERCENTILES=(

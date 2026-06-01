@@ -3,7 +3,7 @@
 
 [In-context sharpness as alerts: An inner representation perspective for hallucination mitigation](https://arxiv.org/abs/2403.01548) (Chen et al., 2024)
 
-- **info_layer**: decoder layer used for calculating activations - {12, 14, 16 for Llama-3.2-1B-Instruct, {22, 24, 26, 28 for Llama-3.2-3B-Instruct and {26, 28, 30, 32 for Llama-3.1-8B-Instruct; 
+- **info_layer**: decoder layer used for calculating activations - {12, 14, 16} for Llama-3.2-1B-Instruct, {22, 24, 26, 28} for Llama-3.2-3B-Instruct and {26, 28, 30, 32} for Llama-3.1-8B-Instruct; 
 - **alpha**: scaling factor for adjusting the next token probability distribution - {0.2, 0.4, 0.6, 0.8}.
 
 | Model | Method | Dataset | Hyper-parameters |
@@ -29,7 +29,7 @@
 
 
 - **rel_top**: threshold for applying plausibility constraint while contrastive decoding - {0.1, 0.01, 0.001}; 
-- **alpha**: scaling factor for adjusting the next token probability distribution - for TruthfulQA-MC, Natural Questions, and TriviaQA {0.25, 0.375, 0.5 and for TruthfulQA-Gen {1.0, 2.0, 3.0}.
+- **alpha**: scaling factor for adjusting the next token probability distribution - for TruthfulQA-MC, Natural Questions, and TriviaQA {0.25, 0.375, 0.5} and for TruthfulQA-Gen {1.0, 2.0, 3.0}.
 
 | Model | Method | Dataset | Hyper-parameters |
 | :--- | :--- | :--- | :--- |

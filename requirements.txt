@@ -1,0 +1,7 @@
+tqdm
+torch
+numpy
+pandas
+datasets
+transformers==4.49.0
+accelerate

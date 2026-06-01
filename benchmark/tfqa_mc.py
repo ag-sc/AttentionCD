@@ -364,7 +364,7 @@ if __name__ == "__main__":
         )
 
     elif mode == "att_cd":
-        from transformers.models.llama_modified import (
+        from custom_models.modeling_llama import (
             LlamaForCausalLM as ModifiedLlamaForCausalLM,
         )
 

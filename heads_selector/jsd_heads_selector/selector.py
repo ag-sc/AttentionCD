@@ -1,9 +1,7 @@
 import argparse
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from transformers.models.llama_modified import (
-    LlamaForCausalLM as ModifiedLlamaForCausalLM,
-)
+from custom_models.modeling_llama import LlamaForCausalLM as ModifiedLlamaForCausalLM
 
 import gc
 import torch
@@ -20,7 +18,6 @@ from torch.utils.data import DataLoader
 from transformers import DataCollatorWithPadding
 
 import os
-import numpy as np
 
 
 def load_json(file_path):
@@ -261,14 +258,7 @@ def get_heads_dict_for_threshold_per_layer(
     print(f"Saved to: {heads_dict_path}")
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--model-name", type=str)
-    parser.add_argument("--dataset-name", type=str)
-    args = parser.parse_args()
-    model_name = args.model_name
-    dataset_name = args.dataset_name
-
+def run_jsd_heads_selector(model_name, dataset_name):
     print("model", model_name)
     print("dataset", dataset_name)
 
@@ -400,3 +390,5 @@ if __name__ == "__main__":
             heads_dict_dir=f"{head_divs_results_dir}/js_divs_per_layer",
         )
         print("-----\n\n")
+
+

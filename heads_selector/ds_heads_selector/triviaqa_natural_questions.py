@@ -308,7 +308,7 @@ def prepare(
 
     monkeypatch_cd()
 
-    from transformers.models.llama_modified import (
+    from custom_models.modeling_llama import (
         LlamaForCausalLM as ModifiedLlamaForCausalLM,
     )
 
@@ -435,21 +435,7 @@ def evaluate(
     return eval_metrics_
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--model-name", type=str, default="meta-llama/Llama-3.2-3B-Instruct"
-    )
-    parser.add_argument(
-        "--dataset-name", type=str, default="natural_questions_val_fold_0"
-    )
-    parser.add_argument("--data-path", type=str, default="data/natural_questions")
-
-    args = parser.parse_args()
-    model_name = args.model_name
-    dataset_name = args.dataset_name
-    data_path = args.data_path
-
+def run_head_selection(model_name, dataset_name, data_path):
     cd_temperature = 1.0
     max_new_tokens = 256
 

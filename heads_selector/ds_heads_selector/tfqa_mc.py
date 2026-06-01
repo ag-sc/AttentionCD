@@ -291,15 +291,7 @@ def load_json(file_path):
     return list_data
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--model-name", type=str, default="huggyllama/llama-7b")
-    parser.add_argument("--data-path", type=str, default="./tfqa")
-
-    args = parser.parse_args()
-    model_name = args.model_name
-    data_path = args.data_path
-
+def run_head_selection(data_path, model_name):
     dataset_name = data_path.split("/")[-1]
     dataset_name = dataset_name.replace(".json", "")
     print("dataset_name", dataset_name)
@@ -312,7 +304,7 @@ if __name__ == "__main__":
     model_args["torch_dtype"] = torch.bfloat16
     model_args["attn_implementation"] = "eager"
 
-    from transformers.models.llama_modified import (
+    from custom_models.modeling_llama import (
         LlamaForCausalLM as ModifiedLlamaForCausalLM,
     )
 
@@ -383,3 +375,4 @@ if __name__ == "__main__":
         "w+",
     ) as f:
         json.dump(all_results, f)
+

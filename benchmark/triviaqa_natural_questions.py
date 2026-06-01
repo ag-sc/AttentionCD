@@ -336,7 +336,7 @@ if __name__ == "__main__":
         if args.layer_indices is None:
             raise Exception("layer_indices should be provided")
 
-        from transformers.models.llama_modified import (
+        from custom_models.modeling_llama import (
             LlamaForCausalLM as ModifiedLlamaForCausalLM,
         )
 

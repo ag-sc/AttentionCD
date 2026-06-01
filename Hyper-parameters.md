@@ -82,16 +82,16 @@ Ref: [DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language
 
 | Model | Method | Dataset | Hyper-parameters |
 | :--- | :--- | :--- | :--- |
-| Llama-3.2-1B-Instruct | PruneCD | TfQA-MC | k=6, alpha=1.0 |
+| Llama-3.2-1B-Instruct | PruneCD | TfQA-MC | k=4, alpha=1.0 |
 | Llama-3.2-3B-Instruct | PruneCD | TfQA-MC | k=3, alpha=1.0 |
 | Llama-3.1-8B-Instruct | PruneCD | TfQA-MC | k=6, alpha=1.0 |
 | Llama-3.2-1B-Instruct | PruneCD | TfQA-Gen | k=3, alpha=1.50 |
 | Llama-3.2-3B-Instruct | PruneCD | TfQA-Gen | k=3, alpha=1.50 |
 | Llama-3.1-8B-Instruct | PruneCD | TfQA-Gen | k=4, alpha=1.50 |
-| Llama-3.2-1B-Instruct | PruneCD | NQ | k=7, alpha=0.15 |
+| Llama-3.2-1B-Instruct | PruneCD | NQ | k=4, alpha=0.15 |
 | Llama-3.2-3B-Instruct | PruneCD | NQ | k=4, alpha=0.10 |
 | Llama-3.1-8B-Instruct | PruneCD | NQ | k=4, alpha=0.25 |
-| Llama-3.2-1B-Instruct | PruneCD | TriviaQA | k=7, alpha=0.15 |
+| Llama-3.2-1B-Instruct | PruneCD | TriviaQA | k=4, alpha=0.15 |
 | Llama-3.2-3B-Instruct | PruneCD | TriviaQA | k=3, alpha=0.10 |
 | Llama-3.1-8B-Instruct | PruneCD | TriviaQA | k=6, alpha=0.25 |
 

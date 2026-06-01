@@ -1,8 +1,8 @@
-# AttentionCD: Reducing Factuality Hallucinations in Large Language Models using Task-specific Head-based Contrastive Decoding
+# **AttentionCD**: Reducing Factuality Hallucinations in Large Language Models using Task-specific Head-based Contrastive Decoding
 
 
 <div align="center">
-  <img src="figures/example_fig.png" alt="AttentionCD" width="350">
+  <img src="figures/example_fig.png" alt="AttentionCD" width="400">
 </div>
 
 Despite the tremendous volume of data they are trained on, Large Language Models (LLMs) can generate plausibly sounding but non-factual responses. These factually hallucinated responses reduce users’ trust in such models and hinder their adoption in safety-critical applications. Among the many training-free hallucination mitigation strategies proposed, contrastive decoding strategies have received wide attention. Most of the work in this direction explores how contrasting probability distributions from different decoder layers can help in reducing factuality hallucinations. This work, in contrast, investigates whether masking of attention heads can provide reliable contrastive signals. 
@@ -29,9 +29,9 @@ See DS heads selection scripts [here](scripts/1_heads_selector/run_ds_heads_sele
 ## 2. Hyper-parameter Sweep
 For a fair evaluation, we run a two-fold cross-validation on all datasets with the different approaches. We use validation samples proportional to the number of test samples in the corresponding datasets. For reproducibility and transparency, we open-source the validation splits used for the hyper-parameter sweep.
 
-See hyperparameter sweep scripts [here](scripts/2_hyperparameter_sweep).
+See hyper-parameter sweep scripts [here](scripts/2_hyperparameter_sweep).
 
-We list the hyperparameters of AttentionCD and other CD techniques [here](Hyperparameters.md).
+We list the hyper-parameters of AttentionCD and other CD techniques [here](Hyper-parameters.md).
 
 ## 3. Evaluation Runs
 

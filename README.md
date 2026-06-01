@@ -33,6 +33,8 @@ See hyper-parameter sweep scripts [here](scripts/2_hyperparameter_sweep).
 
 We list the hyper-parameters of AttentionCD and other CD techniques [here](Hyper-parameters.md).
 
+See [this](notebooks/generate_val_split.ipynb) notebook to replicate our validation split generation.
+
 ## 3. Evaluation Runs
 
 We obtain the best configuration from the hyper-parameter sweep and further use this configuration for evaluation on the test set of each dataset.
